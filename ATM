@@ -1,5 +1,3 @@
-/* package codechef; // don't place package name! */
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -7,22 +5,45 @@ import java.io.*;
 /* Name of the class has to be "Main" only if the class is public. */
 class Codechef
 {
-	public static void main (String[] args) throws java.lang.Exception
+	public static void main (String[] args) throws java.lang.Exception,NoSuchFieldException
 	{
 		// your code goes here
-		Scanner x=new Scanner(System.in);
-		int t=x.nextInt();
-		for(int i=0;i<t;i++)
-		{
-		    int n=x.nextInt();
-		    int s=0;
-		    while(n>0)
-		    {
-		        s=s+n%10;
-		        n=n/10;
-		    }
-		    System.out.println(s);
-		}
+		
+	    float amount;
+        float total_amount;
+      
+        
 
+        Scanner sc1= new Scanner(System.in);
+        amount = sc1.nextFloat();
+        total_amount=sc1.nextFloat();
+       
+
+        if(total_amount<amount+0.50){
+            System.out.print(total_amount);
+
+        }
+        else if(amount%5==0 ) {
+            
+
+            System.out.print(total_amount-amount-0.50);
+
+
+
+        }
+       
+        else {
+
+            System.out.print(total_amount);
+
+        }
+
+
+		
+		
+		
+		
+		
+		
 	}
 }
